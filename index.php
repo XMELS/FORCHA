@@ -12,7 +12,7 @@ if($_SESSION['login'])
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Главная страница</title>
 <!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
-    <?php require('layout/Link.php') ?>
+    <?php include('layout/Link.php') ?>
 <!-- Link Bootstrap подключаются с помощью доп страницы -->
 <!--    <link href="/resource/css/navbar/navbar.css" rel="stylesheet">-->
 <link rel="stylesheet" href="resource/css/style.css">
@@ -20,7 +20,7 @@ if($_SESSION['login'])
 <body>
 
 
-<?php require('layout/Menu.php') ?>
+<?php include('layout/Menu.php') ?>
 
 <div class="container">
     <div class="my-container">
@@ -33,7 +33,7 @@ if($_SESSION['login'])
 
 
 
-<?php require('layout/Footer.php') ?>
+<?php include('layout/Footer.php') ?>
 
 
 
@@ -41,7 +41,7 @@ if($_SESSION['login'])
 
 
 
-<?php require('layout/scriptBootstrap.php')?>
+<?php include('layout/scriptBootstrap.php')?>
 
 
 </body>

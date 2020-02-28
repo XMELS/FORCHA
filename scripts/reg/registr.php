@@ -9,8 +9,8 @@ $country = $_POST['country'];
 $city = $_POST['city'];
 $checkBot = $_POST['checkBot'];
 $date = date("Y-m-d");
-$cod_password = sha1($password);
-$re_cod_password = sha1($re_password);
+//$cod_password = sha1($password);
+//$re_cod_password = sha1($re_password);
 
 
 //Валидация кода
@@ -35,7 +35,7 @@ $city = htmlspecialchars($city);
 
 if(isset($_POST['submit']))
 {
-    $query = "INSERT INTO `users` (login, email, password, repass, nickname, country, city, checkBot, date_reg) VALUES ('$login', '$email', '$cod_password','$re_cod_password', '$nickname', '$country','$city', '$checkBot', '$date')";
+    $query = "INSERT INTO `users` (login, email, password, repass, nickname, country, city, checkBot, date_reg) VALUES ('$login', '$email', '$password','$re_password', '$nickname', '$country','$city', '$checkBot', '$date')";
     $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
 }
 

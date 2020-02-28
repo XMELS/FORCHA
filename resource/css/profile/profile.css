@@ -3,19 +3,18 @@
     margin: 0;
     padding: 0;
 }
-.ahref{
-    margin-left: 0.2em;
-}
 body{
-    background: url("/resource/img/TitleLog.jpg") fixed;
+    /*background: url("/resource/img/TitleLog.jpg") fixed;
     /*background-color: #222222;*/
+    background: rgb(54, 54, 54);
     font-family: 'Varela Round', sans-serif;
 }
 a{
     color: #e3e2e6;
 }
 .breadcrumb{
-    background-color: rgba(23,27,36,0.9);
+    /*background-color: rgba(23,27,36,0.9);*/
+    background-color: rgb(39, 39, 39);
     width: 60vw;
 }
 .blocks-container{
@@ -35,12 +34,6 @@ a{
     color: #6351ce;
 }
 
-.t-1{
-    border-left: 2px solid white;
-}
-.t-2{
-    border-right: 2px solid white;
-}
 
 
 hr{
@@ -62,19 +55,11 @@ hr{
     margin: 0; /* Обнуляем значение отступов */
     font-size: 14px;
 }
-.listInline>li{
+.listInline>a{
     display: inline; /* Отображать как строчный элемент */
     margin-right: 2px; /* Отступ слева */
     border: 1px solid #000; /* Рамка вокруг текста */
     padding: 3px; /* Поля вокруг текста */
-}
-.listInline-li{
-    list-style: none;
-}
-.listInline-li>a{
-    /*text-decoration: none;*/
-    text-shadow: #f00 1px 1px 10px;
-    color: red;
 }
 .pouring{
     font-size: 25px;
@@ -84,4 +69,41 @@ hr{
 }
 
 
-/*  Переливающий текст  */
+.profile{
+    background: rgb(39, 39, 39);
+}
+.user-fon{
+}
+.user-fon>img{
+    width: 100%;
+    height: 300px;
+}
+.user{
+    display: flex;
+    width: 100%;
+    background-color: #233056;
+}
+.user-profile{
+    /*margin-left: 5em;*/
+    height: 100%;
+    margin: 2em;
+}
+.user-profile>img{
+    width:120px;
+}
+.user-profile-void{
+    width: 100%;
+    margin: 2em;
+    list-style: none;
+}
+.my-forum-container{
+    width: 100%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+
+
+
+
+

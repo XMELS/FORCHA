@@ -1,6 +1,5 @@
 <?php
-//session_start();
-
+session_start();
 
 echo '<link href="/resource/css/navbar/navbar.css" rel="stylesheet">
 <nav class="navbar navbar-expand-lg navbar-dark">
@@ -15,10 +14,13 @@ echo '<link href="/resource/css/navbar/navbar.css" rel="stylesheet">
                 <a class="nav-link" href="/account/index.php">Главная <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/forums">Форумы</a>
+                <a class="nav-link" href="/account/forums.php">Форумы</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/account">Новости</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../account/profile.php">Профиль</a>
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right ml-auto">

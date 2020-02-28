@@ -19,14 +19,16 @@ if(isset($_POST['submit']))
 {
     if($login && $password && $checkBot)
     {
-        $user = mysqli_query($connection, "SELECT `id` FROM `users` WHERE `login` = '$login' AND `password` = '$password' AND `checkBot` = '$checkBot'");
+        $user = mysqli_query($connection, "SELECT * FROM `users` WHERE `login` = '$login' AND `password` = '$password' AND `checkBot` = '$checkBot'");// WHERE `login` = '$login' AND `password` = '$password' AND `checkBot` = '$checkBot'
         $id_user = mysqli_fetch_array($user);
         if (empty($id_user['id'])) {
             echo 'Введенные данные не верны';
         } else {
             $_SESSION['password'] = $password;
             $_SESSION['login'] = $login;
+            $_SESSION['nickname'] = $id_user['nickname'];
             $_SESSION['id'] = $id_user['id'];
+
 
             header('Location: ../account/index.php');
         }
