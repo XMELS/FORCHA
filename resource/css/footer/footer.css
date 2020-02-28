@@ -1,0 +1,17 @@
+p{
+    color: white;
+}
+.dcont{
+    /*background-color: #6351ce;*/
+    background-color: rgb(34,142,93);
+}
+.page-footer{
+    background-color: rgba(23,27,36,0.9);
+}
+.text-uppercase{
+    color: #6351ce;
+}
+.footer-copyright{
+    color: white;
+}
+/*background-color: rgba(23,27,36,0.9);*/

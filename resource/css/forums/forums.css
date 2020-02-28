@@ -1,0 +1,88 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.ahref{
+    margin-left: 0.2em;
+}
+body{
+    background: url("/resource/img/TitleLog.jpg") fixed;
+    /*background-color: #222222;*/
+    font-family: 'Varela Round', sans-serif;
+}
+a{
+    color: #e3e2e6;
+}
+.breadcrumb{
+    background-color: rgba(23,27,36,0.9);
+    width: 60vw;
+}
+.blocks-container{
+    /*border: 1px dot-dash #000; !* Рамка вокруг текста *!*/
+    padding: 1em;
+    color: #e3e2e6;
+    background: rgba(23,27,36,1);
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+
+    /*width: 30vw;*/
+}
+.blocks-container>a{
+    text-decoration: none;
+}
+.blocks-container>a:hover{
+    color: #6351ce;
+}
+
+.t-1{
+    border-left: 2px solid white;
+}
+.t-2{
+    border-right: 2px solid white;
+}
+
+
+hr{
+    border: 1px dot-dash  #e3e2e6;
+}
+.m-blocks-container{
+    border: 2px solid black;
+    background-color: rgba(23,27,36,1);
+    color: #e3e2e6;
+
+    font-family: 'Varela Round', sans-serif;
+}
+.m-blocks-container>h3 {
+    margin-top: 0.3em;
+    margin-left: 1em;
+    color: #e3e2e6;
+}
+.listInline{
+    margin: 0; /* Обнуляем значение отступов */
+    font-size: 14px;
+}
+.listInline>li{
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 2px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+}
+.listInline-li{
+    list-style: none;
+}
+.listInline-li>a{
+    /*text-decoration: none;*/
+    text-shadow: #f00 1px 1px 10px;
+    color: red;
+}
+.pouring{
+    font-size: 25px;
+}
+.pouring>p{
+    padding-top: 0.5em;
+}
+
+
+
+/*  Переливающий текст  */
